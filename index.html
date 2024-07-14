@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            background-color: rgb(160, 200, 250);
+        } */
+      section{
+        height:300px;
+        width: 300px;
+        /* background-color: red; */
+        padding: 20px;
+      }
+      .aa,.bb,.cc,.dd{
+        background-color: gray;
+      }
+            .aa:hover ~ section{
+              transform: rotateX(60deg);
+            }
+            .bb:hover ~ section{
+              transform: skewX(40deg);
+            }
+           .cc:hover ~ section{
+              transform: scaleX(1.5);
+           }
+           .dd:hover ~ section{
+            transform: translateX(200px);
+           }
+    </style>
+</head>
+<body>
+    <center>
+        <button class="aa">rotate</button>
+        <button class="bb">skew</button>
+        <button class="cc">scale</button>
+        <button class="dd">translate</button>
+        <br>
+        <section class="cat"> 
+       <img  src="cat.jpg"  height="200px" widht="200px">
+        </section>
+    </center>
+    
+</body>
+</html>
